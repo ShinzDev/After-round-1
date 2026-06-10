@@ -1,13 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <title>After Round One</title>
-</head>
-<body>
-    <h1>After round one</h1>
-    <input type="number" id="userInput" placeholder="pick a number from 1 to 20"><br><br>
-    <button onclick="checkInput()">Submit</button>
-    <button onclick="sumOfPlayerPickedNumber()">check sum </button>
-    <script src="back.js"></script>
-</body>
+    <head>
+        <title>Afternawa - Round One</title>
+    </head>
+    <body>
+        <h1>Afternawa</h1>
+        <h2 id="messageBoard" style="color: #d9534f">
+            Welcome! Everyone pick your target (1-20).
+        </h2>
+        <hr />
+
+        <div id="targetSection">
+            <h3>Target Numbers</h3>
+            <input type="number" id="target1" placeholder="Player 1 Target" />
+            <input type="number" id="target2" placeholder="Player 2 Target" />
+            <input type="number" id="target3" placeholder="Player 3 Target" />
+            <input type="number" id="target4" placeholder="Player 4 Target" />
+            <input type="number" id="target5" placeholder="Player 5 Target" />
+            <br /><br />
+            <button onclick="lockTargets()">Lock Targets</button>
+        </div>
+
+        <hr />
+
+        <div id="throwSection">
+            <h3>The Throws (1-5)</h3>
+            <input type="number" id="throw1" placeholder="Player 1 Throw" />
+            <input type="number" id="throw2" placeholder="Player 2 Throw" />
+            <input type="number" id="throw3" placeholder="Player 3 Throw" />
+            <input type="number" id="throw4" placeholder="Player 4 Throw" />
+            <input type="number" id="throw5" placeholder="Player 5 Throw" />
+            <br /><br />
+            <button onclick="collectRandomNumbers()">Play Round</button>
+        </div>
+
+        <script src="back.js"></script>
+    </body>
 </html>
